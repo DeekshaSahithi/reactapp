@@ -10,6 +10,9 @@ const App = () => {
                
             </div>
             <Header />
+            <Feature/>
+            <AboutFinvesta/>
+            <Footer/>
            
         </div>
     )

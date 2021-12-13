@@ -1,16 +1,24 @@
 import React from 'react';
-import banner from '../../asserts/banner.png'
+import bannerhome from '../../asserts/bannerhome.png';
 import './header.css';
-const Header = () => {
-    return (
-        <div className='finvesta_header section_padding' id='home'>
-            <div className='finvesta_header_content'>
-                <h1 className='gradient__text'>Finvesta offers an Integrated Data Management for Investment Data.</h1>
-                <p>Integrate, organize and manage your data from a single source of unified data</p>
-             <span className='adjesting'><img src={banner} alt='banner'></img></span>
-            </div>
-        </div>
-    )
-}
 
-export default Header
+const Header = () => (
+  <div className="gpt3__header section__padding" id="home">
+    <div className="gpt3__header-content">
+      <h1 className="gradient__text">Finvesta LLC</h1>
+      <p>Finvesta offers an Integrated Data, Management for Invest Data.
+          Integrate, organize, and manage your data from a single source of unified data.</p>
+
+      <div className="gpt3__header-content__input">
+        <input type="email" placeholder="Your Email Address" />
+        <button type="button">Get Started</button>
+      </div>
+    </div>
+
+    <div className="gpt3__header-image">
+   <img src={bannerhome}></img>
+    </div>
+  </div>
+);
+
+export default Header;
